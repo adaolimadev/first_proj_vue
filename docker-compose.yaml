@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  my-vue-app:
+    image: my-vue-cli-image
+    volumes:
+      - .:/app
+    ports:
+      - "8080:8080"
+    command: vue ui --host 0.0.0.0
+    container_name: my-node-vue
