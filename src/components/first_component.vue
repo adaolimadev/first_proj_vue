@@ -1,15 +1,18 @@
 <template>
     <div>
         <h1>Utilizando o primeiro componente!</h1>
-        <p>Estou trabalhando como:</p>
-        <p>Utilizando as seguintes tecnologias</p>
+        <MultiplosEventos />
     </div>
     
 </template>
 
 <script>
+import MultiplosEventos from './MultiplosEventos.vue'
     export default{
         name: 'first_component',
+        components:{
+            MultiplosEventos
+        },
         data(){
             return {
                 nome: "Adão Lima"
